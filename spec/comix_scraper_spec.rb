@@ -1,4 +1,6 @@
-describe 'ComixScraper' do
+require 'spec_helper'
+
+describe Kapow::ComixScraper do
   
   before :each do
     @scraper = Kapow::ComixScraper.new('http://www.previewsworld.com/')   

@@ -1,4 +1,6 @@
-describe 'ComixParser' do
+require 'spec_helper'
+
+describe Kapow::ComixParser do
 
   context 'when it processes new releases' do
 
