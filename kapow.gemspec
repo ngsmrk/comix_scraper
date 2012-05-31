@@ -4,9 +4,9 @@ require File.expand_path('../lib/kapow/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["ngsmrk"]
   gem.email         = ["ngsmrk@gmail.com"]
-  gem.description   = %q{TODO: Scrapes and parses websites to get details of upcoming comic book releases + merchandise}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = "kapow.herokuapp.com"
+  gem.description   = %q{Scrapes and parses websites to get details of upcoming comic book releases + merchandise}
+  gem.summary       = %q{Scrapes and parses websites to get details of upcoming comic book releases + merchandise}
+  gem.homepage      = "http://kapow.herokuapp.com"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

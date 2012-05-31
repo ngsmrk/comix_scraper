@@ -5,11 +5,11 @@ describe 'ComixScraper' do
   end
   
   it 'can get new releases' do
-    #@scraper.get_new_releases.should_not be_nil   
+    @scraper.get_new_releases.should_not be_nil   
   end
   
   it 'can get upcoming releases' do
-    #@scraper.get_upcoming_releases.should_not be_nil   
+    @scraper.get_upcoming_releases.should_not be_nil   
   end  
     
 end

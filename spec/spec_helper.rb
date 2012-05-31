@@ -1,4 +1,4 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'kapow'
+require File.expand_path('../lib/kapow.rb', __FILE__)

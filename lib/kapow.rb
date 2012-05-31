@@ -1,3 +1,4 @@
+require 'httparty'
 require "kapow/version"
 
 module Kapow
