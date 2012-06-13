@@ -23,7 +23,7 @@ module Kapow
         full_url = "#{@base_url}#{url}" 
         puts full_url
         data = self.class.get(full_url)      
-        data.dump.split('\r\n')
+        Kapow::ComixParser.new.parse data.dump.split('\r\n')
       end 
   end
  
