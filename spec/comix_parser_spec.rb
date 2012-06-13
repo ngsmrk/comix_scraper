@@ -22,7 +22,7 @@ describe Kapow::ComixParser do
     end
 
     it 'it can extract specific publication details' do
-      puts @release_data
+      @release_data.comix.each { | comic | puts comic.title }
       
       comic = Kapow::Comic.new('DARK HORSE COMICS', 'MAR120044', 'ANGEL & FAITH #10 REBEKAH ISAACS VAR CVR', '$2.99')
       @release_data.comix.include?(comic).should eql true

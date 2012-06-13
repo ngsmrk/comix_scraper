@@ -4,11 +4,9 @@ module Kapow
     
     attr_accessor :shipping_date, :categories, :comix
     
-    def initialize
-      
+    def initialize      
       @categories = []
       @comix = []
-      
     end
     
   end

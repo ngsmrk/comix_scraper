@@ -10,13 +10,13 @@ module Kapow
 
       current_section = ""
       data.each_with_index { | value, index |
-        puts "Line #{index}: #{value}"
-
-        next if blank? value
 
         release_data.categories << value && current_section = value if CATEGORIES.include?value
 
         values = value.split('\t')
+        
+        next if values.length != 3
+        
         id = values[0]
         title = values[1]
         rrp = values[2]
