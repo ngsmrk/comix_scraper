@@ -1,4 +1,4 @@
-module Kapow
+module ComixScraper
   
   class Comic
 

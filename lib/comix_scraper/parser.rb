@@ -1,12 +1,12 @@
-module Kapow
+module ComixScraper
   
-  class ComixParser
+  class Parser
 
     CATEGORIES = ['DARK HORSE COMICS', 'DC COMICS','IDW PUBLISHING','IMAGE COMICS','MARVEL COMICS','COMICS','MAGAZINES','MERCHANDISE']
 
     def parse(data)
 
-      release_data = Kapow::ReleaseData.new
+      release_data = ComixScraper::ReleaseData.new
 
       current_section = ""
       data.each_with_index { | value, index |
@@ -23,7 +23,8 @@ module Kapow
         release_data.comix << Comic.new(current_section, id, title, rrp)
       }  
 
-      release_data.shipping_date = DateTime.strptime(data[2].split[1], '%m/%d/%Y')
+      puts "Shipping date: #{data[2].split}"
+      release_data.shipping_date = data[2].split[1]
       
       return release_data
 

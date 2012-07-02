@@ -1,0 +1,5 @@
+require "comix_scraper/comic"
+require "comix_scraper/release_data"
+require "comix_scraper/parser"
+require "comix_scraper/scraper"
+require "comix_scraper/version"

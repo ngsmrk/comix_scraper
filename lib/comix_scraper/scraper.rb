@@ -1,8 +1,9 @@
 require 'httparty'
 
-module Kapow
+module ComixScraper
     
-  class ComixScraper
+  class Scraper
+    
       include HTTParty
 
       def initialize(base_url)
@@ -23,7 +24,7 @@ module Kapow
         full_url = "#{@base_url}#{url}" 
         puts full_url
         data = self.class.get(full_url)      
-        Kapow::ComixParser.new.parse data.dump.split('\r\n')
+        ComixScraper::Parser.new.parse data.dump.split('\r\n')
       end 
   end
  

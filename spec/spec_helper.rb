@@ -1,3 +1,3 @@
 require 'rubygems'
 require 'bundler/setup'
-require 'kapow'
+require 'comix_scraper'
