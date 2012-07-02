@@ -6,7 +6,7 @@ module ComixScraper
     
       include HTTParty
 
-      def initialize(base_url)
+      def initialize(base_url = 'http://www.previewsworld.com/')
         @base_url = base_url
       end
 

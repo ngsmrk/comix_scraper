@@ -3,7 +3,7 @@ require 'spec_helper'
 describe ComixScraper::Scraper do
   
   before :each do
-    @scraper = ComixScraper::Scraper.new('http://www.previewsworld.com/')
+    @scraper = ComixScraper::Scraper.new()
   end
   
   it 'can get new releases' do
