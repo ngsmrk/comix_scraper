@@ -1,6 +1,6 @@
 # ComixScraper
 
-TODO: Write a gem description
+Scrapes the http://www.previewsworld.com/ website to fetch listings for upcoming comics, graphic novels and related merchandise.
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+For a sample application see here:
+
+	https://github.com/ngsmrk/kapow_app
 
 ## Contributing
 
