@@ -4,7 +4,7 @@ require File.expand_path('../lib/comix_scraper/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["ngsmrk"]
   gem.email         = ["ngsmrk@gmail.com"]
-  gem.description   = %q{Scrapes and parses websites to get details of upcoming comic book releases + merchandise}
+  gem.description   = %q{Scrapes and parses www.previewsworld.com to get details of upcoming comic book releases + merchandise}
   gem.summary       = %q{See description}
   gem.homepage      = "https://github.com/ngsmrk/comix_scraper"
 
