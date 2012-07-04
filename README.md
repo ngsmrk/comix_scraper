@@ -2,6 +2,10 @@
 
 Scrapes the http://www.previewsworld.com/ website to fetch listings for upcoming comics, graphic novels and related merchandise.
 
+## Build status
+
+[![Build Status](https://secure.travis-ci.org/ngsmrk/comix_scraper.png)](http://travis-ci.org/ngsmrk/comix_scraper)
+
 ## Installation
 
 Add this line to your application's Gemfile:
