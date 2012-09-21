@@ -6,6 +6,10 @@ Scrapes the http://www.previewsworld.com/ website to fetch listings for upcoming
 
 [![Build Status](https://secure.travis-ci.org/ngsmrk/comix_scraper.png)](http://travis-ci.org/ngsmrk/comix_scraper)
 
+## Code quality
+
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/ngsmrk/comix_scraper)
+
 ## Installation
 
 Add this line to your application's Gemfile:
