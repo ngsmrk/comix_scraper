@@ -23,8 +23,9 @@ module ComixScraper
         release_data.comix << Comic.new(current_section, id, title, rrp)
       }  
 
-      puts "Shipping date: #{data[2].split}"
-      release_data.shipping_date = data[2].split[1]
+      shipping_date_data = data[0]
+      puts "Shipping date: #{shipping_date_data}"
+      release_data.shipping_date = shipping_date_data.split[3]
       
       return release_data
 
