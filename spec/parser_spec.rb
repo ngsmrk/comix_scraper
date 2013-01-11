@@ -14,7 +14,7 @@ describe ComixScraper::Parser do
     end
 
     it 'it can find the shipping date' do
-      @release_data.shipping_date.should == '5/30/2012'
+      @release_data.shipping_date.should == '1/9/2013'
     end
 
     it 'it can find the categories' do

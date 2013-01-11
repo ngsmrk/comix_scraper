@@ -11,6 +11,8 @@ describe ComixScraper::Scraper do
     new_releases.should_not be_nil
     new_releases.should be_instance_of ComixScraper::ReleaseData
     new_releases.shipping_date.should_not be_nil
+    new_releases.categories.should_not be_empty
+    new_releases.comix.should_not be_empty
   end
   
   it 'can get upcoming releases' do
@@ -18,6 +20,8 @@ describe ComixScraper::Scraper do
     upcoming_releases.should_not be_nil
     upcoming_releases.should be_instance_of ComixScraper::ReleaseData
     upcoming_releases.shipping_date.should_not be_nil
+    upcoming_releases.categories.should_not be_empty
+    upcoming_releases.comix.should_not be_empty
   end
     
 end
