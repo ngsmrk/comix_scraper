@@ -13,6 +13,12 @@ describe ComixScraper::Scraper do
     new_releases.shipping_date.should_not be_nil
     new_releases.categories.should_not be_empty
     new_releases.comix.should_not be_empty
+    new_releases.comix.each_with_index { |comic, i|
+      comic.id.should_not be_nil
+      comic.rrp.should_not be_nil
+      comic.title.should_not be_nil
+      comic.category.should_not be_nil
+    }
   end
   
   it 'can get upcoming releases' do
@@ -22,6 +28,12 @@ describe ComixScraper::Scraper do
     upcoming_releases.shipping_date.should_not be_nil
     upcoming_releases.categories.should_not be_empty
     upcoming_releases.comix.should_not be_empty
+    upcoming_releases.comix.each_with_index { |comic, i|
+      comic.id.should_not be_nil
+      comic.rrp.should_not be_nil
+      comic.title.should_not be_nil
+      comic.category.should_not be_nil
+    }
   end
     
 end
