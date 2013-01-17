@@ -2,6 +2,8 @@
 
 Scrapes the http://www.previewsworld.com/ website to fetch listings for upcoming comics, graphic novels and related merchandise.
 
+[![Gem Version](https://badge.fury.io/rb/comix_scraper.png)](http://badge.fury.io/rb/comix_scraper)
+
 ## Build status
 
 [![Build Status](https://secure.travis-ci.org/ngsmrk/comix_scraper.png)](http://travis-ci.org/ngsmrk/comix_scraper)
