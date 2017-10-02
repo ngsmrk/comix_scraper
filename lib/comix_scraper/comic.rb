@@ -8,7 +8,7 @@ module ComixScraper
       @category = category
       @id = id
       @title = title
-      @rrp = rrp        
+      @rrp = rrp
     end
 
     def to_s

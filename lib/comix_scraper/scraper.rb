@@ -12,20 +12,20 @@ module ComixScraper
 
       def get_new_releases
         get_data("/shipping/newreleases.txt")
-      end    
+      end
 
       def get_upcoming_releases
         get_data("/shipping/upcomingreleases.txt")
-      end   
+      end
 
       private 
 
       def get_data(url)
-        full_url = "#{@base_url}#{url}" 
+        full_url = "#{@base_url}#{url}"
         puts full_url
-        data = self.class.get(full_url)      
+        data = self.class.get(full_url)
         ComixScraper::Parser.new.parse data.dump.split('\r\n')
-      end 
+      end
   end
- 
+
 end
