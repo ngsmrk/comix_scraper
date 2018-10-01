@@ -18,7 +18,7 @@ describe ComixScraper::Parser do
     end
 
     it 'it can find the categories' do
-      @release_data.categories.should   =~ ["COMICS", "DARK HORSE COMICS", "DC COMICS", "IDW PUBLISHING", "IMAGE COMICS", "MAGAZINES", "MARVEL COMICS", "MERCHANDISE"]            
+      @release_data.categories.should   =~ ['BOOM! STUDIOS','DARK HORSE COMICS','DC COMICS','D. E.','IDW PUBLISHING','IMAGE COMICS','MARVEL COMICS','COMICS & GRAPHIC NOVELS','MAGAZINES','BOOKS','MERCHANDISE']
     end
 
     it 'it can extract specific publication details' do
